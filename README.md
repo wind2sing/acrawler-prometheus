@@ -14,8 +14,6 @@ Export statistics for:
 $ pip install acrawler_prometheus
 ```
 
-
-
 ## Usage
 
 Add Handler:
@@ -24,6 +22,10 @@ Add Handler:
 class MyCrawler(Crawler):
     middleware_config = {
         "acrawler_prometheus.PromExporter": 100,
+    }
+
+    config = {
+        PROMETHEUS_INTERVAL = 5
     }
 ```
 
@@ -34,4 +36,3 @@ PROMETHEUS_ADDR = "localhost"
 PROMETHEUS_PORT = 8000
 PROMETHEUS_INTERVAL = 1  # exporting interval, in second
 ```
-
