@@ -6,7 +6,7 @@ DESCRIPTION = "The handler working with aCrawler and Prometheus"
 URL = "https://github.com/wooddance/acrawler-prometheus"
 EMAIL = "zireael.me@gmail.com"
 AUTHOR = "wooddance"
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 REQUIRED = ["prometheus_client", "acrawler"]
 
 
@@ -21,5 +21,5 @@ setup(
     url=URL,
     python_requires=">=3.6.0",
     install_requires=REQUIRED,
-    py_modules=["acrawler_prometheus"],
+    packages=["acrawler_prometheus"],
 )
