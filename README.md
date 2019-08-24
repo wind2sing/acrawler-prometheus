@@ -25,7 +25,7 @@ class MyCrawler(Crawler):
     }
 
     config = {
-        PROMETHEUS_INTERVAL = 5
+        "PROMETHEUS_INTERVAL": 5
     }
 ```
 
